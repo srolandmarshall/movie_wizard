@@ -39,3 +39,6 @@
 
 # vscode
 .vscode/*
+
+# dstore
+.DS_Store
