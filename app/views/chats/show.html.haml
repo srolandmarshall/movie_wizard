@@ -1,0 +1,9 @@
+.mx-auto.w-full.flex
+  .mx-auto
+    .bg-white.py-8
+      .mx-auto.max-w-lg.px-6
+        %ul.overflow-y-auto.flex.flex-col-reverse{:class => "max-h-[48vh]", :role => "list"}
+          = turbo_stream_from "#{dom_id(@chat)}_messages"
+          %div{:id => "#{dom_id(@chat)}_messages"}
+            = render @chat.messages
+        = render partial: "messages/form", locals: { chat: @chat }
