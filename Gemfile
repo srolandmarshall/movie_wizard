@@ -72,3 +72,7 @@ gem "sidekiq", "~> 7.3"
 gem "rubocop", "~> 1.69"
 
 gem "rubocop-rails", "~> 2.27"
+
+gem "devise", "~> 4.9"
+
+gem "faker", "~> 3.5"
